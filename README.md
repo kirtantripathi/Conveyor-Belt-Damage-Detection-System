@@ -5,6 +5,10 @@ Automated detection of **scratch** and **edge damage** defects on conveyor belts
 1. **Belt ROI Segmentation** — YOLOv8n-seg model extracts the conveyor belt region
 2. **Damage Detection** — Computer vision algorithms detect scratches and edge damage within the belt ROI (CLAHE normalization, Gaussian anomaly mapping, adaptive thresholding, morphological filtering, contour-based edge deviation analysis)
 
+## Sample Predictions
+
+![Output Image](sample_images/Sample_Conv_Belt_Detection.png)
+
 ## Table of Contents
 
 - [Setup](#setup)
@@ -288,8 +292,3 @@ Performance is measured using **mF1@0.5–0.95**:
 | `Too many false positives` | Increase `--scratch_thresh` or `--edge_thresh` |
 | `Missing detections` | Decrease `--scratch_thresh` or `--edge_thresh` |
 | `Slow inference` | Images are 4K; resize input or accept ~2s/image on CPU |
-
-
-## Sample Predictions
-
-![Output Image](sample_images/Sample_Conv_Belt_Detection.png)
