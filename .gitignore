@@ -1,0 +1,15 @@
+# Python virtual environment
+my_env/
+
+# Dataset folder
+dataset/
+
+# Output folder
+outputs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+images/
+labels/
